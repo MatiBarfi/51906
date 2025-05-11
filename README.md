@@ -96,7 +96,10 @@ El archivo principal es `index.js`, que analiza el contenido del archivo `input.
    ```bash
    npm start
    ```
-
+> En caso de nunca haber utilizado este comando debe ejecutar en la terminal el siguiente código antes de escribir npm start:
+> ```bash
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 3. La salida esperada será algo como:
 
    ```
