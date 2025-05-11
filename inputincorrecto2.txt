@@ -1,0 +1,2 @@
+if (0) {printf ("true");} else{if (0) {printf ("true");} else{printf ("false");};}
+
