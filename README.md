@@ -72,7 +72,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 2. Cambia al directorio del proyecto:
 
    ```bash
-   cd 51906
+   cd 51906/Analizador
    ```
 
 3. Abre el proyecto en VS Code:
