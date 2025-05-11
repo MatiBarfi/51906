@@ -89,7 +89,7 @@ El archivo principal es `index.js`, que analiza el contenido del archivo `input.
 
 ### 📝 Para probar el analizador:
 
-1. Copia el contenido de uno de los ejemplos en el archivo `input.txt`.
+1. Copia el contenido de uno de los ejemplos en el archivo `input.txt` y guarda el archivo.
 
 2. Ejecuta el analizador:
 
