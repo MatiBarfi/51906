@@ -1,5 +1,5 @@
 grammar Analizador;
-
+options { tokenVocab=AnalizadorLexer; }
 //Gramatica
 programa: instrucciones EOF
 ;
@@ -21,7 +21,7 @@ terminar:RETURN SEMICOLON #ter1
 condicion:CERO #cero1
           |UNO #uno1
 ;
-cadena:LDCOMILLA caracteres LDCOMILLA #cadena1
+cadena:LDCOMILLA caracteres LDCOMILLA_END #cadena1
 ;
 caracteres:caracter #caracter1
          |caracteres caracter #caracteres1
@@ -30,20 +30,3 @@ caracter:LETRA #letr
          |DIGITO #dig
          |SIMBOLO #sim
 ;
-//Lexemas
-IF: 'if';
-ELSE:'else';
-LPARENT:'(';
-RPARENT:')';
-LCBRACES:'{';
-RCBRACES:'}';
-PRINTF:'printf';
-SEMICOLON: ';';
-RETURN: 'return';
-LDCOMILLA: '"';
-CERO: '0';
-UNO: '1';
-LETRA: ([a-z]|[A-Z]);
-DIGITO: [0-9];
-SIMBOLO: [.,!?:;'];
-WS: [ \t\r\n]+ -> skip ;
