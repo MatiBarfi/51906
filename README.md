@@ -68,6 +68,36 @@ npm start
 ```
 
 #### Nota para usuarios de PowerShell en Windows:
+Si obtienes un error de política de ejecución al correr `npm start`, ejecuta:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Confirma con `Y` o `A`.
+
+---
+
+## Salida Esperada
+
+Usando `inputcorrecto1.txt`, deberías ver:
+
+```
+Entrada válida.
+
+Tabla de Lexemas:
+if → IF
+( → LPAR
+1 → UNO
+...
+<EOF> → EOF
+
+Árbol de derivación:
+(programa (instrucciones (instruccion ...
+...
+Fin de visita del programa.
+verdadero
+```
 
 ---
 
@@ -138,46 +168,6 @@ Una vez todo esté configurado:
 Esto iniciará la depuración y mostrará tanto el árbol de derivación textual como una vista visual (si tienes habilitada la opción en la extensión).
 
 > Si aparece el error `"Configured debug type 'antlr-debug' is not supported"`, asegúrate de tener instalada correctamente la extensión **ANTLR4 grammar syntax support**.
-### 5. Ejecuta el analizador
-
-```bash
-npm start
-```
-
-#### Nota para usuarios de PowerShell en Windows:
-Si obtienes un error de política de ejecución al correr `npm start`, ejecuta:
-
-```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-Confirma con `Y` o `A`.
-
----
-
-## Salida Esperada
-
-Usando `inputcorrecto1.txt`, deberías ver:
-
-```
-Entrada válida.
-
-Tabla de Lexemas:
-if → IF
-( → LPAR
-1 → UNO
-...
-<EOF> → EOF
-
-Árbol de derivación:
-(programa (instrucciones (instruccion ...
-...
-Fin de visita del programa.
-verdadero
-```
-
----
-
 ## Reglas para un Input Válido (Según `Analizador.g4` y `AnalizadorLexer.g4`)
 
 ### Estructura General
