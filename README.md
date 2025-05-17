@@ -1,6 +1,6 @@
 # Analizador
 
-Este proyecto utiliza **ANTLR4** y **Node.js** para analizar instrucciones escritas en un lenguaje definido por la gramática `Analizador.g4`.
+Este proyecto utiliza **ANTLR4** y **Node.js** para analizar instrucciones escritas en un lenguaje definido por la gramática `Analizador.g4` y `AnalizadorLexer.g4`.
 
 ---
 
